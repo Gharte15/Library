@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library App</title>
+</head>
+
+<body>
+  <h1>Library</h1>
+  <table id="booksTable">
+  </table>
+  <button class="open-button" onclick="openForm()">Add book</button>
+  <div class="form-popup" id="myForm">
+    <form class="formContainer">
+      <h2>Add a book</h2>
+      <div>
+        <label for="title">
+          <strong>Title</strong>
+        </label>
+        <input type="text" id="title" placeholder="Book's Title" name="title" required>
+      </div>
+      <div>
+        <label for="author">
+          <strong>Author</strong>
+        </label>
+        <input type="text" id="author" placeholder="Book's Author" name="author" required>
+      </div>
+      <label for="pages">
+        <strong>Pages</strong>
+      </label>
+      <input type="text" id="pages" placeholder="Book's number of pages" name="pages" required>
+      <div>
+        <button type="button" class="btn" onclick="createNewBook()">Add</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </div>
+    </form>
+  </div>
+  <script src="Library.js"></script>
+</body>
+
+</html>
